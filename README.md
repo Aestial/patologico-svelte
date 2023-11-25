@@ -1,4 +1,13 @@
-# create-svelte
+# patologico-svelte
+
+> [!WARNING]
+> Work in Progress!
+
+Patologico is back with a revamp and refactor because it was collaping by itself and who doesn't love front-end frameworks? Let's try Svelte for Patologico, they seem like a perfect match!
+
+## Background 
+
+This is a modified version of the create-svelte template found:
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
