@@ -1,10 +1,13 @@
 <script>
 	import Header from './Header.svelte';
+	import Screensaver from './Screensaver.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
-	<!-- <Header /> -->
+	<!-- <Screensaver /> -->
+	
+	<Header />
 
 	<main>
 		<slot />
@@ -16,6 +19,15 @@
 </div>
 
 <style>
+	.app {
+		margin: 0;
+		overflow: hidden;
+		touch-action: none;
+		font-family: MyFrida, helvetica;
+		color: #fff;
+		background-color: #696969;
+	}
+
 	/* .app {
 		display: flex;
 		flex-direction: column;

@@ -1,10 +1,7 @@
 <script>
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import Curtain from './Curtain.svelte';
-	import Forkit from './Forkit.svelte';
 	import Patologico from './Patologico.svelte';
-	import Screensaver from './Screensaver.svelte';
 </script>
 
 <svelte:head>
@@ -13,10 +10,7 @@
 </svelte:head>
 
 <section>
-	<!-- <Screensaver /> -->
 	<Patologico />
-	<!-- <Curtain /> -->
-	<!-- <Forkit /> -->
 </section>
 
 <style>
