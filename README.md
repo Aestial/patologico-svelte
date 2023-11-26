@@ -3,7 +3,7 @@
 > [!WARNING]
 > Work in Progress!
 
-Patologico is back with a revamp and refactor because it was collaping by itself and who doesn't love front-end frameworks? Let's try Svelte for Patologico, they seem like a perfect match!
+Patologico is back with a revamp and refactor because it was collapsing by itself and who doesn't love front-end frameworks? Let's try Svelte for Patologico, they seem like a perfect match!
 
 ## Background 
 
