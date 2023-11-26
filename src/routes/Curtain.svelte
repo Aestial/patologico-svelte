@@ -63,7 +63,7 @@
 
 <style>
 	.forkit-curtain {
-		background: rgba(0, 0, 0, 0.85);
+		background: rgba(0, 0, 0, 0.5);
 		height: 100%;
 		left: 0;
 		overflow: auto;

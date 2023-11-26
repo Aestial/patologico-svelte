@@ -25,7 +25,7 @@
 		touch-action: none;
 		font-family: MyFrida, helvetica;
 		color: #fff;
-		background-color: #696969;
+		background-color: rgba(20,20,20,0.5);
 	}
 
 	/* .app {
