@@ -32,7 +32,7 @@
 		z-index: 1000;
 	}
 
-	.corner {
+	/* .corner {
 		width: 3em;
 		height: 3em;
 	}
@@ -49,7 +49,7 @@
 		width: 2em;
 		height: 2em;
 		object-fit: contain;
-	}
+	} */
 
 	nav {
 		display: flex;
