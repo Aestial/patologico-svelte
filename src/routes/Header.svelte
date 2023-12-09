@@ -24,7 +24,8 @@
 
 <style>
 	header {
-		position: relative;
+		position: absolute;
+		right: 10px;
 		display: flex;
 		justify-content: center;
 		z-index: 1000;

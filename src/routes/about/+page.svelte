@@ -1,6 +1,5 @@
 <script>
-	import Curtain from "../Curtain.svelte";
-	import Forkit from "../Forkit.svelte";
+	import Credits from "../Credits.svelte";
 </script>
 
 <svelte:head>
@@ -9,8 +8,8 @@
 </svelte:head>
 
 <div class="text-column">
-	<Curtain />
- 	<Forkit />
+	<Credits />
+ 	<!-- <Forkit /> -->
 	<!-- <h1>About this app</h1>
 
 	<p>

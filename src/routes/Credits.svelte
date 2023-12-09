@@ -18,7 +18,6 @@
 	<!-- Credits Curtain: The contents (if there's no contents the ribbon acts as a link) -->
 	<div class="forkit-curtain">
 		<div class="curtain-container">
-			<br>
 			<!-- <div class="close-button"><img src={cross_icon} alt="Close button" /></div> -->
 			<div class="title">
 				<img src={title_typo} alt="PATOLOGICO" width="auto" height="100" />
@@ -65,7 +64,6 @@
 	.forkit-curtain {
 		background: rgba(0, 0, 0, 0.5);
 		height: 100%;
-		left: 0;
 		overflow: auto;
 		position: fixed;
 		text-align: center;
@@ -74,6 +72,10 @@
 	}
 	.curtain-container {
 		overflow: auto;
+		position: relative;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
 	}
 	.forkit-curtain .close-button {
 		position: relative;
