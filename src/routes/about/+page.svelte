@@ -1,5 +1,5 @@
 <script>
-	import Credits from "../Credits.svelte";
+	import Credits from "./Credits.svelte";
 </script>
 
 <svelte:head>

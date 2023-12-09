@@ -1,12 +1,13 @@
-<script>
+<script lang="ts">
 	import Header from './Header.svelte';
 	import Screensaver from './Screensaver.svelte';
 	import './styles.css';
+
+	let screensaver : any;
+
 </script>
 
-<div class="app">
-	<!-- <Screensaver /> -->
-	
+<div class="app">	
 	<Header />
 
 	<main>
@@ -16,6 +17,8 @@
 	<footer>
 		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 	</footer> -->
+
+	<Screensaver  bind:this={screensaver} self={screensaver} time={1500}/>
 </div>
 
 <style>
