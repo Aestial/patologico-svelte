@@ -2,15 +2,19 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import Patologico from './Patologico.svelte';
+	import BurgerMenu from './BurgerMenu.svelte';
+	import SideMenu from './SideMenu.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Patologico</title>
+	<meta name="description" content="Patologico ultra hi-res character" />
 </svelte:head>
 
 <section>
 	<Patologico />
+	<BurgerMenu />
+	<!-- <SideMenu /> -->
 </section>
 
 <style>

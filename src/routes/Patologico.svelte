@@ -1,4 +1,15 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	
+	onMount(async () => {
+		// Dynamic import
+		const Snap = await import('snapsvg-cjs-ts');
+		console.log(Snap);
+		let pato = Snap('#pato');
+		// console.log(pato);
+	});``
+	
+
 </script>
 
 <div class="patologico">

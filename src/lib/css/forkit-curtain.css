@@ -1,0 +1,45 @@
+.forkit-curtain {
+  /* position: relative; */
+  text-align: center;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  overflow: auto;
+}
+.curtain-container {
+  overflow: auto;
+}
+.forkit-curtain .close-button {
+  position: relative;
+  text-align: right;
+  cursor: pointer;
+  margin: 15px 15px 0 0;
+}
+.title {
+  font-size: 2.5em;
+}
+.subtitle {
+  font-size: 1.6em;
+}
+.name {
+  font-size: 1.35em;
+}
+.cell {
+  margin: 35px;
+}
+.social {
+  width: 45px;
+  height: 45px;
+}
+.social img {
+  margin: 20px;
+  width: inherit;
+  height: inherit;
+  transition: all 150ms ease-in;
+  z-index: 4;
+  transform: scale(1);
+}
+.social img:hover {
+  transition: all 250ms ease-in;
+  z-index: 5;
+  transform: scale(2);
+}

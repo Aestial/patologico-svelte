@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+@font-face {
+  font-family: MyFrida;
+  src: url('./Myfrida-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MyFrida;
+  src: url('./Myfrida-Regular-Italic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: MyFrida;
+  src: url('./Myfrida-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MyFrida-Hollow;
+  src: url('./Myfrida-Hollow.otf');
+  font-weight: normal;
+  font-style: normal;
+}
