@@ -4,16 +4,9 @@
 	import left_icon from '$lib/svg/left.svg';
 	import right_icon from '$lib/svg/right.svg';
 	import rombo_icon from '$lib/svg/rombo.svg';
-	import plus_icon from '$lib/svg/plus.svg';
-
-	import { slide } from 'svelte/transition';
-
+	
 	function reload() {
 		location.reload();
-	}
-	function openMenu() {
-		console.log('Toggle menu!');
-		//slide.toggle(true):
 	}
 	function onNextShirt() {
 		console.log('Next button shirt');

@@ -1,18 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
-	export let shirtColor = "#bababa";
-	export let tieColor = "#cacaca";
-	export let tiePatternColor = "#dedede"
+	export let shirtColor = '#bababa';
+	export let tieColor = '#cacaca';
+	export let tiePatternColor = '#dedede';
 </script>
 
 <div class="patologico">
 	<!-- Main SVG -->
-	<svg
-		id="pato"
-		version="1.1"
-		viewBox="-0 0 630 874"
-	>
+	<svg id="pato" version="1.1" viewBox="-0 0 630 874">
 		<defs id="defs6">
 			<linearGradient id="linearGradient4338">
 				<stop style="stop-color:#a0a07c;stop-opacity:1;" offset="0" id="stop4340" />
@@ -43,7 +37,7 @@
 				<stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="stop3936" />
 			</linearGradient>
 			<linearGradient
-								xlink:href="#linearGradient3932"
+				xlink:href="#linearGradient3932"
 				id="linearGradient3938"
 				x1="1119.0554"
 				y1="1743.4452"
@@ -53,7 +47,7 @@
 				gradientTransform="matrix(0.43108625,0,0,0.43108625,-9.7867127,-7.6960183)"
 			/>
 			<linearGradient
-								xlink:href="#linearGradient4094"
+				xlink:href="#linearGradient4094"
 				id="linearGradient4100"
 				x1="685.30206"
 				y1="1040.1132"
@@ -63,7 +57,7 @@
 				gradientTransform="matrix(0.43108625,0,0,0.43108625,-9.7867127,-7.6960183)"
 			/>
 			<linearGradient
-								xlink:href="#linearGradient4215"
+				xlink:href="#linearGradient4215"
 				id="linearGradient4221"
 				x1="556.16724"
 				y1="779.31622"
@@ -73,7 +67,7 @@
 				gradientTransform="matrix(0.43108625,0,0,0.43108625,-9.7867127,-7.6960183)"
 			/>
 			<linearGradient
-								xlink:href="#linearGradient4252"
+				xlink:href="#linearGradient4252"
 				id="linearGradient4258"
 				x1="818.61707"
 				y1="895.98914"
@@ -83,7 +77,7 @@
 				gradientTransform="matrix(0.43108625,0,0,0.43108625,-9.7867127,-7.6960183)"
 			/>
 			<linearGradient
-								xlink:href="#linearGradient4298"
+				xlink:href="#linearGradient4298"
 				id="linearGradient4304"
 				x1="473.12158"
 				y1="520.38727"
@@ -93,7 +87,7 @@
 				gradientTransform="matrix(0.43108625,0,0,0.43108625,-9.7867127,-7.6960183)"
 			/>
 			<linearGradient
-								xlink:href="#linearGradient4326"
+				xlink:href="#linearGradient4326"
 				id="linearGradient4332"
 				x1="567.48383"
 				y1="560.86267"
@@ -103,7 +97,7 @@
 				gradientTransform="matrix(0.43108625,0,0,0.43108625,-9.7867127,-7.6960183)"
 			/>
 			<linearGradient
-								xlink:href="#linearGradient4338"
+				xlink:href="#linearGradient4338"
 				id="linearGradient4344"
 				x1="836.43634"
 				y1="640.44043"
@@ -1722,5 +1716,6 @@
 		height: auto;
 		max-height: 100%;
 		min-width: 320px;
+		pointer-events: none;
 	}
 </style>

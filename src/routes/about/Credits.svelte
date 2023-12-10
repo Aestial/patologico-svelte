@@ -1,5 +1,4 @@
 <script lang="ts">
-	import cross_icon from '$lib/svg/x.svg';
 	import title_typo from '$lib/svg/typo/titulo.svg';
 
 	import design_typo from '$lib/svg/typo/diseno.svg';
