@@ -1,15 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	
-	onMount(async () => {
-		// Dynamic import
-		const Snap = await import('snapsvg-cjs-ts');
-		console.log(Snap);
-		let pato = Snap('#pato');
-		// console.log(pato);
-	});``
-	
 
+	export let shirtColor = "#bababa";
+	export let tieColor = "#cacaca";
+	export let tiePatternColor = "#dedede"
 </script>
 
 <div class="patologico">
@@ -126,21 +120,8 @@
 			objecttolerance="10"
 			gridtolerance="10"
 			guidetolerance="10"
-			inkscape:pageopacity="0"
-			inkscape:pageshadow="2"
-			inkscape:window-width="1280"
-			inkscape:window-height="706"
 			id="namedview4"
 			showgrid="false"
-			inkscape:zoom="0.67916667"
-			inkscape:cx="540"
-			inkscape:cy="360"
-			inkscape:window-x="-8"
-			inkscape:window-y="-8"
-			inkscape:window-maximized="1"
-			inkscape:current-layer="layer21"
-			showguides="true"
-			inkscape:guide-bbox="true"
 			viewbox-x="-0.2"
 			scale-x="0.4"
 		/>
@@ -184,7 +165,7 @@
 				sodipodi:insensitive="true"
 			>
 				<path
-					style="fill:#218cba;fill-opacity:1;stroke:none"
+					style="fill:{shirtColor};fill-opacity:1;stroke:none"
 					d="m 158.11317,880.45902 16.80669,-86.30465 12.26434,-77.21994 11.81011,-80.85382 14.53552,-49.51156 32.25068,-15.89827 53.59971,-18.62361 -5.56437,-6.92706 -1.9305,-22.5982 8.5169,-11.01521 8.17623,7.15423 15.10331,3.17959 -9.77533,16.54119 8.20484,20.51209 c -26.10608,89.00352 -65.87748,174.68882 -36.55914,274.85785 l 43.19043,36.74411 29.0085,-18.69437 10.31414,-18.04974 c 17.31701,-106.09579 9.05399,-196.55932 -17.40509,-275.90304 l 6.44632,-23.20685 -14.25514,-14.94885 22.56333,-2.0512 8.43274,-4.10245 -0.68373,-11.39563 10.02814,3.41869 4.78616,5.92575 2.27913,35.09847 c 0,0 69.74111,24.38662 72.47611,23.475 2.73496,-0.91167 3.64654,42.84751 3.64654,42.84751 l 13.67476,103.92801 15.95384,77.4902 21.4238,76.5785 4.55822,10.48397 -258.45251,0 z"
 					id="shirt"
 					inkscape:connector-curvature="0"
@@ -351,7 +332,7 @@
 				sodipodi:insensitive="true"
 			>
 				<path
-					style="fill:#800000;stroke:none"
+					style="fill:{tieColor};stroke:none"
 					d="m 334.24496,516.57733 -22.24836,20.77607 10.46982,24.37502 c -44.44115,97.47089 -61.5254,188.62865 -37.97278,270.40864 l 46.2705,40.2553 36.55369,-36.55371 c 16.72318,-110.93327 7.99029,-199.59246 -17.12009,-273.92133 l 4.49609,-29.47167 z"
 					id="tie"
 					inkscape:connector-curvature="0"
@@ -373,10 +354,10 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4017"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4023"
 						width="24.18289"
 						height="24.848454"
@@ -391,10 +372,10 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4025"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4027"
 						width="24.18289"
 						height="24.848454"
@@ -409,10 +390,10 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4029"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4031"
 						width="24.18289"
 						height="24.848454"
@@ -427,10 +408,10 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4033"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4035"
 						width="24.18289"
 						height="24.848454"
@@ -445,10 +426,10 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4037"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4039"
 						width="23.567514"
 						height="20.583887"
@@ -457,7 +438,7 @@
 						transform="matrix(0.69409482,-0.71988358,0.7135527,0.70060155,0,0)"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4041"
 						width="24.18289"
 						height="24.848454"
@@ -472,7 +453,7 @@
 						height="22.573072"
 						width="22.093229"
 						id="rect4043"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
 						transform="matrix(0.69409482,-0.71988358,0.7135527,0.70060155,0,0)"
@@ -481,10 +462,10 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4045"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4047"
 						width="24.18289"
 						height="24.848454"
@@ -493,7 +474,7 @@
 						transform="matrix(0.69409482,-0.71988358,0.7135527,0.70060155,0,0)"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4049"
 						width="24.18289"
 						height="24.848454"
@@ -508,7 +489,7 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4051"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
 						transform="matrix(0.69409482,-0.71988358,0.7135527,0.70060155,0,0)"
@@ -517,10 +498,10 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4053"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4055"
 						width="24.18289"
 						height="24.848454"
@@ -529,7 +510,7 @@
 						transform="matrix(0.69409482,-0.71988358,0.7135527,0.70060155,0,0)"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4057"
 						width="24.18289"
 						height="24.848454"
@@ -544,7 +525,7 @@
 						height="24.848454"
 						width="24.18289"
 						id="rect4059"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
 						transform="matrix(0.67663285,-0.73632058,0.69651628,0.71754098,0,0)"
@@ -553,10 +534,10 @@
 						height="24.261841"
 						width="23.643051"
 						id="rect4061"
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 					/>
 					<rect
-						style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;fill-rule:nonzero;stroke:none"
 						id="rect4063"
 						width="24.18289"
 						height="24.848454"
@@ -569,17 +550,17 @@
 						inkscape:connector-curvature="0"
 						id="path4069"
 						d="m 294.04544,641.12097 -6.23547,16.92839 -1.48893,9.35487 8.64981,8.53523 16.42602,-17.35141 z"
-						style="fill:#d45500;fill-opacity:1;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;stroke:none"
 					/>
 					<path
-						style="fill:#d45500;fill-opacity:1;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;stroke:none"
 						d="m 299.44394,613.63772 -4.10879,16.43756 -3.6156,9.68207 5.37798,5.09984 16.42602,-17.35145 z"
 						id="path4071"
 						inkscape:connector-curvature="0"
 						sodipodi:nodetypes="cccccc"
 					/>
 					<path
-						style="fill:#d45500;fill-opacity:1;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;stroke:none"
 						d="m 359.61709,644.57535 10.65079,-11.63295 -2.67486,-14.57506 -8.5676,-8.61776 -16.59157,17.19323 z"
 						id="path4073"
 						inkscape:connector-curvature="0"
@@ -590,14 +571,14 @@
 						inkscape:connector-curvature="0"
 						id="path4075"
 						d="m 309.75017,588.93548 -5.41752,15.61965 -2.79765,9.35486 -2.14719,-1.4438 16.42601,-17.35144 z"
-						style="fill:#d45500;fill-opacity:1;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;stroke:none"
 					/>
 					<path
 						sodipodi:nodetypes="cccccc"
 						inkscape:connector-curvature="0"
 						id="path4077"
 						d="m 359.33182,611.01084 4.94548,-5.67616 c 1.17703,-3.23642 -5.0601,-7.8808 -4.32212,-13.31244 l -2.47804,-7.01544 -12.34647,12.2605 z"
-						style="fill:#d45500;fill-opacity:1;stroke:none"
+						style="fill:{tiePatternColor};fill-opacity:1;stroke:none"
 					/>
 				</g>
 			</g>
