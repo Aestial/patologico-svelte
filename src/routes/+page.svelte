@@ -6,18 +6,23 @@
 	import { onMount } from 'svelte';
 
 	const colors = {
+		background: '#cedce8',
 		pattern: '#d45500',
 		shirt: '#7ea889',
 		tie: '#690000'
 	};
 
+	let bgColor = '#cedce8';
+
 	const indices = {
-		pattern: getRandomInt(colorLib.tie.length),
-		shirt: getRandomInt(colorLib.shirt.length),
-		tie: getRandomInt(colorLib.tie.length)
+		background: Math.randomInt(colorLib.background.length),
+		pattern: Math.randomInt(colorLib.tie.length),
+		shirt: Math.randomInt(colorLib.shirt.length),
+		tie: Math.randomInt(colorLib.tie.length)
 	};
 
 	onMount(() => {
+		bgColor = colorLib.background[indices.background];
 		colors.pattern = colorLib.tie[indices.pattern];
 		colors.shirt = colorLib.shirt[indices.shirt];
 		colors.tie = colorLib.tie[indices.tie];
@@ -47,9 +52,7 @@
 		return options[indices.shirt];
 	}
 
-	function getRandomInt(max: number) {
-		return Math.floor(Math.random() * max);
-	}
+	
 </script>
 
 <svelte:head>
@@ -57,8 +60,23 @@
 	<meta name="description" content="Patologico ultra hi-res character" />
 </svelte:head>
 
-<section>
+<section style:--bg={bgColor}>
 	<Swiper on:swipe={updateColor} />
 	<Patologico {...colors} />
 	<BurgerMenu />
 </section>
+
+<style>
+	section {
+		background-color: var(--bg);
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	/* :global(body) {
+		background-color: var(--bg) !important;
+		background-image: none !important;
+	} */
+
+</style>
