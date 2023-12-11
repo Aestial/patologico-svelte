@@ -36,6 +36,7 @@
 	function setTool(value: Tool) {
 		tool = value;
 		console.log(tool);
+		expanded = false;
 	};
 
 </script>
