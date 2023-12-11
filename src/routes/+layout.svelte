@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '../math.extensions';
 	import Header from './Header.svelte';
 	import Screensaver from './Screensaver.svelte';
 	import './styles.css';
