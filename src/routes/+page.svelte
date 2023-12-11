@@ -27,10 +27,12 @@
 		switch (event.detail) {
 			case 'left':
 				console.log('Back');
+				colors.pattern = selectFromArray(colorLib.tie, false);
 				colors.shirt = selectFromArray(colorLib.shirt, false);
 				break;
 			case 'right':
 				console.log('Next');
+				colors.pattern = selectFromArray(colorLib.tie, true);
 				colors.shirt = selectFromArray(colorLib.shirt, true);
 				break;
 		}
@@ -38,9 +40,9 @@
 
 	function selectFromArray(options: string[], forward: boolean = true): string {
 		if (forward) {
-			if (indices.shirt++ >= options.length - 1) indices.shirt = 0;
+			if (++indices.shirt >= options.length) indices.shirt = 0;
 		} else {
-			if (indices.shirt-- <= 0) indices.shirt = options.length - 1;
+			if (--indices.shirt < 0) indices.shirt = options.length - 1;
 		}
 		return options[indices.shirt];
 	}
