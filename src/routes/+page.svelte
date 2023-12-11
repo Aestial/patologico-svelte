@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Patologico from './Patologico.svelte';
 	import BurgerMenu from './BurgerMenu.svelte';
-	import Swiper from './Swiper.svelte';
+	import PagerInput from './PagerInput.svelte';
 	import colorLib from '$lib/json/colors.json';
 	import { onMount } from 'svelte';
 
@@ -27,19 +27,16 @@
 		patoColors.tie = colorLib.tie[indices.tie];
 	});
 
-	function updateColor(event: any) {
-		switch (event.detail) {
-			case 'left':
-				console.log('Back');
-				patoColors.pattern = selectFromArray(colorLib.tie, false);
-				patoColors.shirt = selectFromArray(colorLib.shirt, false);
-				break;
-			case 'right':
-				console.log('Next');
-				patoColors.pattern = selectFromArray(colorLib.tie, true);
-				patoColors.shirt = selectFromArray(colorLib.shirt, true);
-				break;
-		}
+	function nextColor(event: any) {
+		console.log("Next");
+		patoColors.pattern = selectFromArray(colorLib.tie, true);
+		patoColors.shirt = selectFromArray(colorLib.shirt, true);
+	}
+
+	function previousColor(event: any) {
+		console.log("Back");
+		patoColors.pattern = selectFromArray(colorLib.tie, false);
+		patoColors.shirt = selectFromArray(colorLib.shirt, false);
 	}
 
 	function selectFromArray(options: string[], forward: boolean = true): string {
@@ -50,8 +47,6 @@
 		}
 		return options[indices.shirt];
 	}
-
-	
 </script>
 
 <svelte:head>
@@ -60,7 +55,7 @@
 </svelte:head>
 
 <section style:--bg={bgColor}>
-	<Swiper on:swipe={updateColor} />
+	<PagerInput on:back={previousColor} on:next={nextColor} />
 	<Patologico {...patoColors} />
 	<BurgerMenu />
 </section>
@@ -72,10 +67,4 @@
 		width: 100vw;
 		height: 100vh;
 	}
-
-	/* :global(body) {
-		background-color: var(--bg) !important;
-		background-image: none !important;
-	} */
-
 </style>
