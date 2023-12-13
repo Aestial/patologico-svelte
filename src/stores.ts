@@ -1,3 +1,4 @@
+import './math.extensions';
 import { derived, writable } from 'svelte/store';
 import options from '$lib/json/colors.json';
 
