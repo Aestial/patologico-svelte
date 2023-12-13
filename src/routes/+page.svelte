@@ -1,26 +1,50 @@
 <script lang="ts">
-	import options from '$lib/json/colors.json';
-
 	import BurgerMenu from './BurgerMenu.svelte';
-	import ColorPick from './ColorPick.svelte';
 	import PagerInput from './PagerInput.svelte';
 	import Patologico from './Patologico.svelte';
+	import { tool, bgOpt, patternOpt, shirtOpt, tieOpt } from '../stores';
 
-	const colors = {
-		bg: "#fff",
-		pato: {
-			pattern: "#fff",
-			shirt: "#fff",
-			tie: "#fff"
-		}
-	}
+	$: background = bgOpt.color;
+	$: pattern = patternOpt.color;
+	$: shirt = shirtOpt.color;
+	$: tie = tieOpt.color;
+
+	// TODO: Improve following functions removing switch. Use interfaces?
 
 	function nextColor(event: any) {
 		console.log('Next');
+		switch ($tool) {
+			case 'brush':
+				bgOpt.increment();
+				break;
+			case 'diamond':
+				patternOpt.increment();
+				break;
+			case 'shirt':
+				shirtOpt.increment();
+				break;
+			case 'tie':
+				tieOpt.increment();
+				break;
+		}
 	}
 
 	function previousColor(event: any) {
 		console.log('Back');
+		switch ($tool) {
+			case 'brush':
+				bgOpt.decrement();
+				break;
+			case 'diamond':
+				patternOpt.decrement();
+				break;
+			case 'shirt':
+				shirtOpt.decrement();
+				break;
+			case 'tie':
+				tieOpt.decrement();
+				break;
+		}
 	}
 </script>
 
@@ -29,14 +53,13 @@
 	<meta name="description" content="Patologico ultra hi-res character" />
 </svelte:head>
 
-<section style:--bg={colors.bg}>
+<section style:--bg={$background}>
+	<!-- Input component for navigating through colors. -->
 	<PagerInput on:back={previousColor} on:next={nextColor} />
-	<Patologico {...colors.pato} />
+	<!-- Our SVG hero with customizable hex colors -->
+	<Patologico pattern={$pattern} shirt={$shirt} tie={$tie} />
+	<!-- Tool selection menu from a burger icon with show/hide features -->
 	<BurgerMenu />
-	<ColorPick bind:value={colors.bg} options={options.background} />
-	<ColorPick bind:value={colors.pato.pattern} options={options.tie} />
-	<ColorPick bind:value={colors.pato.shirt} options={options.shirt} />
-	<ColorPick bind:value={colors.pato.tie} options={options.tie} />
 </section>
 
 <style>

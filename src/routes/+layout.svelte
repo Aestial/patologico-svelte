@@ -4,18 +4,15 @@
 	import Screensaver from './Screensaver.svelte';
 	import './styles.css';
 
-	let screensaver : any;
-
+	let screensaver: any;
 </script>
 
-<div class="app">	
+<div class="app">
 	<Header />
-
 	<main>
 		<slot />
 	</main>
-
-	<Screensaver  bind:this={screensaver} self={screensaver} time={1500}/>
+	<Screensaver bind:this={screensaver} self={screensaver} time={1500} />
 </div>
 
 <style>

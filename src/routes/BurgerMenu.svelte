@@ -6,39 +6,39 @@
 	import shirt from '$lib/svg/shirt.svg';
 	import tie from '$lib/svg/tie.svg';
 
+	import { tool } from '../stores';
+
 	enum Tool {
 		brush,
 		diamond,
 		shirt,
 		tie
-	};
+	}
 
 	let expanded = false;
-	let tool: Tool = Tool.brush;
+	export let value: string = Tool[Tool.brush];
 
 	function reload() {
 		location.reload();
-	};
+	}
 
-	function setBrush(){
+	function setBrush() {
 		setTool(Tool.brush);
-	};
-	function setDiamond(){
+	}
+	function setDiamond() {
 		setTool(Tool.diamond);
-	};
-	function setShirt(){
+	}
+	function setShirt() {
 		setTool(Tool.shirt);
-	};
-	function setTie(){
+	}
+	function setTie() {
 		setTool(Tool.tie);
-	};
-
-	function setTool(value: Tool) {
-		tool = value;
-		console.log(tool);
+	}
+	function setTool(newTool: Tool) {
+		value = Tool[newTool];
+		tool.update(() => value);
 		expanded = false;
-	};
-
+	}
 </script>
 
 <nav>

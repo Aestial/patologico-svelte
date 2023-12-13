@@ -1,6 +1,6 @@
 <script lang="ts">
 	import nest from '$lib/svg/loading.svg';
-	import quack from '$lib/sounds/quack.mp3'
+	import quack from '$lib/sounds/quack.mp3';
 
 	import { onDestroy } from 'svelte';
 	import { onMount } from 'svelte';
@@ -15,7 +15,7 @@
 		setTimeout(() => {
 			self.$destroy();
 		}, time);
-	})
+	});
 </script>
 
 <div class="screensaver">
@@ -29,7 +29,7 @@
 	<!-- Audio Player -->
 	<div id="audio_player">
 		<audio autoplay hidden>
-			<source src="{quack}" type="audio/mpeg" />
+			<source src={quack} type="audio/mpeg" />
 			If you're reading this, audio isn't supported.
 		</audio>
 	</div>
